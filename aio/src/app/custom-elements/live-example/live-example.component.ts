@@ -76,6 +76,7 @@ export class LiveExampleComponent implements OnInit {
     location: Location ) {
 
     const attrs = this.attrs = getAttrs(this.elementRef);
+    console.log(attrs)
     let exampleDir = attrs.name;
     if (!exampleDir) {
       // take last segment, excluding hash fragment and query params
